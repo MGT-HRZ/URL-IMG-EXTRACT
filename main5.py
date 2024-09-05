@@ -111,7 +111,7 @@ def output_to_html(urls, output_file, max_images):
 
             file.write('<div class="col-md-3 mt-4">\n')
             file.write('<div class="card" style="width: 18rem;">\n')
-            file.write(f'<a href="{url}" data-lightbox="image-gallery" data-title="Iamge {count}">\n')
+            file.write(f'<a href="{url}" data-lightbox="image-gallery" data-title="Image {count}">\n')
             file.write(f'<img src="{url}" class="card-img-top" alt="" width="150px" height="150px">\n')
             file.write('</a>\n')
             file.write('<div class="checkbox-wrapper">\n')
