@@ -127,7 +127,7 @@ def extract_urls_from_html(html_file):
 def main():
     website_url = ""  # Change this to the target website
     domain_filter = ""  # Domain to filter
-    increase_scale =   # Add image count
+    increase_scale = 0  # Add image count
     
     # Initial extraction
     extracted_urls = extract_href_from_page(website_url, domain_filter)
