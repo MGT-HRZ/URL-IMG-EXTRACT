@@ -6,4 +6,6 @@
 
 4. pip install -r requirements.txt
 
-5. py main.py
+5. pip install --upgrade webdriver-manager
+
+6. py main.py
