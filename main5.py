@@ -181,6 +181,16 @@ def main():
     output_to_html(all_image_urls, final_output_file, increase_scale)  # Set max_images to 2 for final output
 
     print(f"Combined extraction complete. Output written to {final_output_file}")
+    print(f"{website_url}. DONE !!!")
+
+    # Ask the user for confirmation
+    user_input = input("Do you want to execute this command? (y/n): ").strip().lower()
+
+    if user_input == "y":
+        # Execute the batch_image_zipper.py script
+        os.system("python batch_image_zipper.py")
+    else:
+        print("Command not executed.")
 
 if __name__ == "__main__":
     main()
